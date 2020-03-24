@@ -19,7 +19,8 @@ Ext.define('MySenchaSandbox.view.main.Main', {
         "MySenchaSandbox.view.basicwindow.BasicWindow",
         "MySenchaSandbox.view.main.BasicWindowController",
         "MySenchaSandbox.view.simpledrag.SimpleDrag",
-        "MySenchaSandbox.view.main.SimpleDragController"
+        "MySenchaSandbox.view.main.SimpleDragController",
+        "MySenchaSandbox.view.combobox.ComboBox"
 
     ],
 
@@ -111,6 +112,13 @@ Ext.define('MySenchaSandbox.view.main.Main', {
         items: [{
             xtype: 'drag-simple'
         }],
+    }, {
+
+        title: 'My Combobox',
+        iconCls: 'fa-bars',
+        items: [{
+            xtype: 'remote-combo'
+        }],
         // bind: {
         //     html: '{loremIpsum}'
         // }
@@ -188,9 +196,9 @@ Ext.define('MySenchaSandbox.view.layout.Main', {
             collapsible: false,
             region: 'center',
             margin: '5 0 0 0',
-            html: '<button>My Layout Button</button>'
+            html: '<h2>I am some text!</h2>'
+
         }
     ]
 
 });
-
