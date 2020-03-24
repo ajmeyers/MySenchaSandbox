@@ -7,12 +7,12 @@ Ext.define('MySenchaApp.store.RemoteStates', {
 
     storeId: 'remote-states',
 
-    proxy: {
-        type: 'ajax',
-        url: 'data/form/states_remote.php',
-        reader: {
-            type: 'array',
-            rootProperty: 'data'
-        }
-    }
+    // proxy: {
+    //     type: 'ajax',
+    //     url: 'data/form/states_remote.php',
+    //     reader: {
+    //         type: 'array',
+    //         rootProperty: 'data'
+    //     }
+    // }
 });

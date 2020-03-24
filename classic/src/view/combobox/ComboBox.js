@@ -25,6 +25,7 @@ Ext.define('MySenchaSandbox.view.combobox.ComboBox', {
     },
     title: 'Remote Query ComboBox',
     width: 500,
+    border: "1px",
     layout: 'form',
     cls: 'simple-combo remote-combo',
     viewModel: {},
@@ -42,7 +43,8 @@ Ext.define('MySenchaSandbox.view.combobox.ComboBox', {
                 '<h3>Remote query mode</h3>',
                 '<p>This ComboBox uses <code>queryMode: "remote"</code> ',
                 'to perform the query on a remote API which returns states ',
-                'that match the typed string.</p>'
+                'that match the typed string.</p>',
+                '<p><b>Bug: remote-states alias (store) not recognized</b></p>'
             ]
         }, {
             xtype: 'displayfield',
