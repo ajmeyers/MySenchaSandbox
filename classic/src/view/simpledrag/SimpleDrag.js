@@ -5,7 +5,6 @@ Ext.define('MySenchaSandbox.view.simpledrag.SimpleDrag', {
     extend: 'Ext.panel.Panel',
     xtype: 'drag-simple',
     controller: 'drag-simple',
-
     border: "1px",
     width: 800,
     height: 500,

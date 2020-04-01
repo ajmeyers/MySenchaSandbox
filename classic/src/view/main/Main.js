@@ -20,8 +20,9 @@ Ext.define('MySenchaSandbox.view.main.Main', {
         "MySenchaSandbox.view.main.BasicWindowController",
         "MySenchaSandbox.view.simpledrag.SimpleDrag",
         "MySenchaSandbox.view.main.SimpleDragController",
-        "MySenchaSandbox.view.combobox.ComboBox"
-
+        "MySenchaSandbox.view.combobox.ComboBox",
+        "MySenchaSandbox.view.loginform.LoginForm",
+        "MySenchaSandbox.view.main.LoginFormController"
     ],
 
     controller: 'main',
@@ -119,6 +120,14 @@ Ext.define('MySenchaSandbox.view.main.Main', {
         items: [{
             xtype: 'remote-combo'
         }],
+    }, {
+
+        title: 'My Login Form',
+        iconCls: 'fa-sign-in-alt',
+        items: [{
+            xtype: 'form-login'
+        }],
+
         // bind: {
         //     html: '{loremIpsum}'
         // }
